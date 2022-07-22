@@ -35,6 +35,32 @@ public class DataHandler {
             }
         });
     }
+    public static boolean checkExistence(String name){
+        Path cur_config = Path.of(path + "/" + name + "/" + name + ".yml");
+        if (Files.notExists(cur_config, LinkOption.NOFOLLOW_LINKS)) {
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public static boolean checkExistence(Player player){
+        String name = player.getName();
+        Path cur_config = Path.of(path + "/" + name + "/" + name + ".yml");
+        if (Files.notExists(cur_config, LinkOption.NOFOLLOW_LINKS)) {
+            return false;
+        }else{
+            return true;
+        }
+    }
+    public static boolean checkExistence(PlayerData playerdata){
+        String name = playerdata.getName();
+        Path cur_config = Path.of(path + "/" + name + "/" + name + ".yml");
+        if (Files.notExists(cur_config, LinkOption.NOFOLLOW_LINKS)) {
+            return false;
+        }else{
+            return true;
+        }
+    }
 
     public static String generatePlayerFolder(String name){
         Path cur_config = Path.of(path + "/" + name + "/");
@@ -51,6 +77,7 @@ public class DataHandler {
             return name;
         }
     }
+
     public static String generatePlayerFolder(Player player){
         String name = player.getName().toString();
         Path cur_config = Path.of(path + "/" + name + "/");

@@ -13,6 +13,7 @@ public class ConfigData {
 
     //int
     public Integer maxPasswordAtemmpts = 3;
+    public Integer pwEntryTimer = 15;
 
     public void load(Configuration config) {
         instance = this;
@@ -20,6 +21,7 @@ public class ConfigData {
         defaultPassword = config.getString("default_password");
         langFile = config.getString("lang_file");
         maxPasswordAtemmpts = config.getInteger("max_pw_attempts");
+        pwEntryTimer = config.getInteger("pw_entry_timer");
     }
     public static ConfigData getInstance(){
         return instance;

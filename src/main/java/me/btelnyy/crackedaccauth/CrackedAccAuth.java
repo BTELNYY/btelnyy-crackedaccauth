@@ -71,7 +71,7 @@ public class CrackedAccAuth extends JavaPlugin {
     public void log(Level level, Object message){
         getLogger().log(level, message.toString());
     }
-
+    @SuppressWarnings("unused")
     private void registerCommandExecutor(String commandName, CommandExecutor commandExecutor) {
         PluginCommand command = getCommand(commandName);
 
@@ -85,6 +85,7 @@ public class CrackedAccAuth extends JavaPlugin {
         }
         command.setExecutor(commandExecutor);
     }
+    @SuppressWarnings("unused")
     private void registerCommandExecutor(String commandName, CommandExecutor commandExecutor, TabCompleter completer) {
         PluginCommand command = getCommand(commandName);
 

@@ -10,3 +10,6 @@ default_password: "password"
 
 # Max Password Attempts before kick?
 max_pw_attempts: 3
+
+# How long before a user gets kicked if they have not entered the password? (in seconds)
+pw_entry_timer: 15
