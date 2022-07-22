@@ -1,0 +1,12 @@
+# Language File
+#   The file is found from /plugins/btelnyy-crackedaccauth/
+lang_file: "language.yml"
+
+# Force everyone to use a password?
+enforce_password: false
+
+# Default password?
+default_password: "password"
+
+# Max Password Attempts before kick?
+max_pw_attempts: 3

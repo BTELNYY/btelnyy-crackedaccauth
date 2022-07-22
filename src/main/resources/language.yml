@@ -1,0 +1,7 @@
+not_player: "&cError: &7You must be a player to run this command."
+invalid_syntax: "&cError: &7Invalid syntax. Syntax: {usage}"
+player_not_found: "&cError: &7Player not found."
+no_permission: "&cError: &7You do not have permission to run this command. Contact an administrator for more details."
+not_on_self: "&cError: &7You cannot run this command on yourself."
+status_disabled: "&cDISABLED"
+status_enabled: "&aENABLED"
